@@ -1,9 +1,18 @@
-/* Set the background color of the navigation bar */
+/* *{
+  margin: 0;
+} */
+
+
 .navp {
     background-color: white;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 20px 20px 50px 10px rgb(52, 196, 206) inset;
+
 }
 .navp ul{
   display: flex;
@@ -12,9 +21,44 @@
 .navp li{
   list-style: none;
   margin-left: 40px;
-  font-size: 25px;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* color: black; */
+
+  
+}
+
+.navp ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+  
+.navp ul li a:hover {
+  color: #ff0000;
+}
+
+
+.logo1 img{
+  border-radius:60%;
+  margin-right: 5%;
+}
+
+
+.logo1{
+  display: flex;
+  /* align-items: last baseline; */
+  align-items: center;
+
 
 }
+
+/* 
+.logo1 img{
+  box-shadow: 20px 20px 50px 15px grey;
+
+} */
+
 
 
 /* Set the background color of the home paragraph */
@@ -38,6 +82,8 @@
     border-radius:60%;
     border: 7px solid white;
     margin-right: 15%;
+    box-shadow: 20px 20px 50px 15px grey;
+
 }
 
 /* Style the learn more button */
@@ -50,8 +96,10 @@
 }
 
 .homep button:hover{
-  color: white;
-  background-color: gray;
+  /* color: white; */
+  /* background-color: gray; */
+  box-shadow: 2px 2px 5px #ff0000;
+
 }
 
 /* Add some padding to the home paragraph */
@@ -166,6 +214,7 @@ p {
     border-radius: 5px;
     /* box-shadow: 2px 2px 2px 2px rgb(187, 182, 182); */
     background-color: rgb(206, 235, 247);
+    box-shadow: 20px 20px 50px 15px grey;
 
 }
 .leftp img:hover{

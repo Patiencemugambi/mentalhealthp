@@ -11,3 +11,17 @@ form.addEventListener('submit', function(event) {
     // Optionally, you can reset the form after displaying the alert
     form.reset();
 });
+
+// // Smooth scrolling when clicking on navigation links
+// document.querySelectorAll('nav ul li').forEach((link) => {
+//     link.addEventListener('click', (event) => {
+//       event.preventDefault(); // Prevent default link behavior
+//       const targetId = event.target.textContent.toLowerCase().replace(' ', ''); // Get the target element's ID from the clicked link
+//       const targetElement = document.getElementById(targetId); // Get the target element by its ID
+  
+//       if (targetElement) {
+//         targetElement.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target element smoothly
+//       }
+//     });
+//   });
+  

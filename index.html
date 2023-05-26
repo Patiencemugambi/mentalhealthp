@@ -9,16 +9,19 @@
 </head>
 <body>
     <nav class="navp">
-        <h1>Sound <br> Mind Therapy</h1>
+        <div class="logo1">
+        <img src="images/logoimage.jpeg" alt="" height="100px" height="100px">
+        <h1> Sound <br> Mind Therapy</h1>
+        </div>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+            <li> <a href="#home-p"> Home </a></li>
+            <li> <a href="#aboutus"> About </a></li>
+            <li> <a href="#ourservicesp">Services</a></li>
+            <li> <a href="#contactsection">Contact Us</a></li>
         </ul>
     </nav>
     <hr>
-    <div class="homep">
+    <div class="homep" id="home-p">
         <div>
         <h1>Our Center</h1>
         <p>Embark on a journey towards inner peace and healing with our expert and compassionate mental health support. <br> Discover the transformative power of therapy in a nurturing and supportive environment.</p>
@@ -29,7 +32,7 @@
     <hr>
 
     <!-- About Us -->
-    <div class="aboutp">
+    <div class="aboutp" id="aboutus">
         <div class="aboutp1">
             <div class="cont1">
              <h1 id="abtp">ABOUT US</h1>
@@ -46,7 +49,7 @@
     </div>
 
     <!-- our services -->
-    <section class="sectionp">
+    <section class="sectionp" id="ourservicesp">
         <h2 id="titlep">Our Services</h2>
         <hr>
         <div class="textp">
@@ -95,7 +98,7 @@
     </section>
 
     <!-- Contact Us -->
-    <section class="contact-section">
+    <section class="contact-section" id="contactsection">
         <h2>Contact Us</h2>
         <form class="contact-form" action="/submit_contact_form" method="POST">
             <label for="name">Name:</label>
