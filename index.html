@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +16,6 @@
             <li>Services</li>
             <li>Contact Us</li>
         </ul>
-
     </nav>
     <hr>
     <div class="homep">
@@ -57,22 +57,22 @@
             <div class="leftp">
                 <div class="img1p">
                     <h3>Individual <br> Counselling</h3>
-                    <a href="services.html#individualp"><img src="images/Stressed black man explaining his pr.jpeg" alt="Stressed black man." height="200px" width="200px"></a>
+                    <a href="services.html#individualp" class="link-img"><img src="images/Stressed black man explaining his pr.jpeg" alt="Stressed black man." height="200px" width="200px"></a>
                     <p>Personalized counseling sessions for emotional well-being and personal growth. Expert therapists provide support, coping strategies, and tailored approaches to address various mental health concerns. Take the first step towards a happier you.</p>
                 </div>
                 <div class="img2p">
                     <h3>Couples <br> Therapy</h3>
-                    <a href="services.html#couplesp"><img src="images/Loving African Husband Caring About.jpeg" alt="Loving Husband" height="200px" width="200px"></a>
+                    <a href="services.html#couplesp" class="link-img"><img src="images/Loving African Husband Caring About.jpeg" alt="Loving Husband" height="200px" width="200px"></a>
                     <p>Our couples therapy sessions improve communication, resolve conflicts, and deepen connections. We provide a safe space to explore dynamics and build a stronger partnership. Experienced therapists guide couples with effective techniques for intimacy and trust. Whether facing challenges or seeking to strengthen bonds, our therapy supports a loving partnership.</p>
                 </div>
                 <div class="img3p">
                     <h3>Group <br> Therapy</h3>
-                    <a href="services.html#groupp"><img src="images/Group Therapy.jpeg" alt="Group Therapy" height="200px" width="200px"></a>
+                    <a href="services.html#groupp" class="link-img"><img src="images/Group Therapy.jpeg" alt="Group Therapy" height="200px" width="200px"></a>
                     <p>Group therapy provides a safe and supportive environment for individuals facing similar challenges to connect, share experiences, and foster personal growth. Joining a group offers a transformative experience, promoting healing and development through shared support and diverse topics.</p>
                 </div>
                 <div class="img4p">
                     <h3>Workshops <br> and Seminars</h3>
-                    <a href="services.html#workshopsp"><img src="images/Garden Workshops — Sacred Vibes Apothecary.jpeg" alt="Garden workshop" height="200px" width="200px"></a>
+                    <a href="services.html#workshopsp" class="link-img"><img src="images/Garden Workshops — Sacred Vibes Apothecary.jpeg" alt="Garden workshop" height="200px" width="200px"></a>
                     <p>In addition to counseling and therapy services, we also provide workshops and seminars on mental health and personal development. These events offer valuable knowledge, skills, and self-care strategies. Topics covered include stress management, mindfulness, emotional resilience, and self-care practices. Participating in these events can enhance understanding, well-being, and equip you to handle life's challenges.</p>
                 </div>
             </div>
@@ -90,15 +90,30 @@
                     <li><span class="emoji">🌟</span> Focus on progress, not perfection. Each day is an opportunity to grow, learn, and move closer to a place of mental and emotional well-being.</li><hr>
                     <li><span class="emoji">🌈</span> Believe in your resilience. You have faced challenges before and have come out stronger. Trust in your ability to navigate this journey and emerge with newfound strength and wisdom.</li><hr>
                 </ul>
-
             </div>
         </div>
-
     </section>
 
+    <!-- Contact Us -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="/submit_contact_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
 
-   <script src="script.js"></script> 
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script> 
 </body>
 </html>
