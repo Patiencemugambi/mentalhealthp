@@ -1,0 +1,265 @@
+/* Set the background color of the navigation bar */
+.navp {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.navp ul{
+  display: flex;
+
+}
+.navp li{
+  list-style: none;
+  margin-left: 40px;
+  font-size: 25px;
+
+}
+
+
+/* Set the background color of the home paragraph */
+.homep {
+    background-color: rgb(206, 235, 247);
+    height: 400px;
+}
+
+/* Align the text and button on the left and the image on the right */
+.homep {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 35px;
+    height: 600px;
+}
+
+/* Style the image as a circle with a white border */
+.homep img {
+    border-radius:60%;
+    border: 7px solid white;
+    margin-right: 15%;
+}
+
+/* Style the learn more button */
+.homep button {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.homep button:hover{
+  color: white;
+  background-color: gray;
+}
+
+/* Add some padding to the home paragraph */
+.homep p {
+    padding-right: 20px;
+}
+
+/* Additional styles */
+/* Add your additional styles here */
+
+/* Styles for ABOUT US section */
+ .homep h1 {
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#btn2 {
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn2:hover{
+  color: white;
+  background-color: gray;
+}
+
+.aboutp{
+  margin-top: 15px;
+}
+
+.aboutp h1{
+  font-size: 20px;
+}
+
+.aboutp h2{
+  font-size: 60px;
+}
+
+.aboutp1{
+  display: flex;
+}
+
+#abtp{
+    color: #555;
+}
+
+.abtp1{
+  border-left: 1px solid black;
+  height: 200px;
+  left: 50%;
+  margin-left: -3px;
+  padding-left: 10px;
+  margin: 30px;
+}
+
+.cont1{
+  margin-right: 100px;
+}
+
+.img2{
+  display: flex;
+  justify-content: center;
+  /* box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.3); */
+
+}
+
+/* services */
+.missionp img{
+    border-radius: 45%;
+
+}
+.missionp h3{
+    font-size: 20px;
+}
+.textp{
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: center;
+   
+}
+
+#titlep{
+    text-align: center;
+}
+
+
+
+.leftp{
+    display: flex;
+    justify-content: space-between;
+}
+.leftp div{
+    margin: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 2px 2px rgb(187, 182, 182); */
+    background-color: rgb(206, 235, 247);
+
+}
+.leftp img:hover{
+    cursor: pointer;
+}
+
+#titlep{
+    margin-left: 20px;
+    font-size: 3.0em;
+}
+.sectionp h3{
+    font-size: 2.0em;
+
+}
+
+
+.leftp button{
+    background: rgba(221, 213, 210, 0.87);
+    padding:10px 15px;
+    border-radius:5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 1px solid black;  
+}
+.leftp button:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 5px 5px rgb(187, 182, 182);
+}
+
+ .learnmorep{
+      margin: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 2px rgb(187, 182, 182);
+ }
+
+ .motivationp{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ .motivationlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+
+ .motivationlist li {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-style: italic;
+    text-align: center;
+   
+  }
+  .emoji{
+    font-size: 3rem;
+
+  }
+  
+
+
+
+ @media (max-width: 768px) {
+    .leftp {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+    
+    .leftp div {
+      margin: 20px auto;
+      margin-left: 1.0em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sectionp h3 {
+      font-size: 1.5em;
+    }
+  }
+  @media(max-width: 360px){
+    .leftp {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+  }
+  
+  
+
+
