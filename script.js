@@ -12,16 +12,18 @@ form.addEventListener('submit', function(event) {
     form.reset();
 });
 
-// // Smooth scrolling when clicking on navigation links
-// document.querySelectorAll('nav ul li').forEach((link) => {
-//     link.addEventListener('click', (event) => {
-//       event.preventDefault(); // Prevent default link behavior
-//       const targetId = event.target.textContent.toLowerCase().replace(' ', ''); // Get the target element's ID from the clicked link
-//       const targetElement = document.getElementById(targetId); // Get the target element by its ID
-  
-//       if (targetElement) {
-//         targetElement.scrollIntoView({ behavior: 'smooth' }); // Scroll to the target element smoothly
-//       }
-//     });
-//   });
-  
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetElement = document.querySelector(this.getAttribute('href'));
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

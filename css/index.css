@@ -96,7 +96,9 @@
 }
 
 .homep button:hover{
-  /* color: white; */
+  color: #ff0000;
+  border: 1px solid #ff0000;
+
   /* background-color: gray; */
   box-shadow: 2px 2px 5px #ff0000;
 
@@ -131,16 +133,19 @@ p {
 
 #btn2 {
     padding: 10px 20px;
-    background-color: skyblue;
-    color: white;
+    background-color: white;
+    /* color: white; */
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.btn2:hover{
-  color: white;
-  background-color: gray;
+#btn2:hover{
+  color: #ff0000;
+  background-color: white;
+  border: 1px solid #ff0000;
+  box-shadow: 2px 2px 5px #ff0000;
+
 }
 
 .aboutp{
@@ -280,6 +285,24 @@ p {
     font-size: 3rem;
 
   }
+  #submitbtnp{
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submitbtnp:hover{
+    color: #ff0000;
+    background-color: white;
+    border: 1px solid #ff0000;
+    box-shadow: 2px 2px 5px #ff0000;
+  
+
+  }
+
+
   
 
 
