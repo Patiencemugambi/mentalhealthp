@@ -37,3 +37,13 @@ var images = document.querySelectorAll('.slideshow img');
     currentIndex = (currentIndex + 1) % images.length;
     images[currentIndex].classList.add('active');
   }, 3000); // Change image every 3 seconds
+
+
+  const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+scrollToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
