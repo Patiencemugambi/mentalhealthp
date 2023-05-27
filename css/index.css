@@ -308,11 +308,14 @@ p {
   
 
   }
+  .contact-section{
+    text-align: center;
+  }
 
 .contact-container{
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  justify-content: space-around;
+  /* width: 60%; */
 }
 
 
