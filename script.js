@@ -1,4 +1,4 @@
-// Get the form element by its class name
+// Get the form element using class name
 const form = document.querySelector('.contact-form');
 
 // Add an event listener to the form's submit event
@@ -6,7 +6,7 @@ form.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
     // Display a success message
-    alert('Form submitted successfully!');
+    alert('Form Submitted successfully!');
 
     // reset the form after displaying the alert
     form.reset();
@@ -28,20 +28,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-//slideshow
-var images = document.querySelectorAll('.slideshow img');
-  var currentIndex = 0;
 
-  setInterval(function() {
-    images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].classList.add('active');
-  }, 3000); // Change image every 3 seconds
-
+//scroll to top
 
   const scrollToTopButton = document.querySelector('.scroll-to-top');
 
-scrollToTopButton.addEventListener('click', function() {
+   scrollToTopButton.addEventListener('click', function() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
