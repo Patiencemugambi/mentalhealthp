@@ -8,7 +8,7 @@ form.addEventListener('submit', function(event) {
     // Display a success message
     alert('Form submitted successfully!');
 
-    // Optionally, you can reset the form after displaying the alert
+    // reset the form after displaying the alert
     form.reset();
 });
 
@@ -27,3 +27,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+//slideshow
+var images = document.querySelectorAll('.slideshow img');
+  var currentIndex = 0;
+
+  setInterval(function() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }, 3000); // Change image every 3 seconds
