@@ -26,6 +26,7 @@
   /* color: black; */  
 }
 
+
 .navp ul li a {
   text-decoration: none;
   color: black;
@@ -34,6 +35,8 @@
   
 .navp ul li a:hover {
   color: #ff0000;
+  font-size: 40px;
+
 }
 
 
@@ -308,7 +311,7 @@ p {
   
 
   }
-  .contact-section{
+  .contact-section h2{
     text-align: center;
   }
 
@@ -320,7 +323,7 @@ p {
 
 
   .contact-form textarea {
-    width: 50%;
+    /* width: 50%; */
     height: 100px;
     border: 1px solid black;
     border-radius: 5px;
@@ -328,7 +331,7 @@ p {
   }
 
   .contact-form input {
-    width: 50%;
+    /* width: 50%; */
     height: 20px;
     border: none;
     border-bottom: 1px solid black;
@@ -405,6 +408,7 @@ p {
 
 .footer-content{
   background-color: #555;
+  color: white;
 }
 
 
