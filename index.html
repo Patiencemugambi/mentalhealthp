@@ -10,8 +10,8 @@
 <body>
     <nav class="navp">
         <div class="logo1">
-        <img src="images/logoimage.jpeg" alt="" height="100px" height="100px">
-        <h1> Sound <br> Mind Therapy</h1>
+        <img  class="slideLeft" src="images/logoimage.jpeg" alt="" height="100px" height="100px">
+        <h1  class="slideLeft"> Sound <br> Mind Therapy</h1>
         </div>
         <ul>
             <li> <a href="#home-p"> Home </a></li>
@@ -23,11 +23,11 @@
     <hr>
     <div class="homep" id="home-p">
         <div>
-        <h1>Our Center</h1>
-        <p>Embark on a journey towards inner peace and healing with our expert and compassionate mental health support. <br> Discover the transformative power of therapy in a nurturing and supportive environment.</p>
-        <button type="menu">LEARN MORE</button>
+        <h1 class="slideLeft">Our Center</h1>
+        <p  class="slideLeft" >Embark on a journey towards inner peace and healing with our expert and compassionate mental health support. <br> Discover the transformative power of therapy in a nurturing and supportive environment.</p>
+        <button  class="slideLeft" type="menu">LEARN MORE</button>
         </div>
-        <img class="" src="images/mentalhealth1.jpg" alt="" height="300px" width="450px">
+        <img class="drop-in-animation" src="images/mentalhealth1.jpg" alt="" height="300px" width="450px">
     </div>
     <hr>
 
@@ -47,6 +47,7 @@
       </div>
       <hr>
     <div class="img2">
+        
       <img src="images/mental-health-care-sketch-diagram_53876-121351.avif" alt="" height="auto" width="1000px">
     </div>
     </div>
@@ -118,17 +119,15 @@
     <div class="contact-container">
         <div class="contact-form-container">
             <h3>Send a Message</h3>
-            <form class="contact-form" action="/submit_contact_form" method="POST"><!-- method post is used instead of get-->
-                <label for="first-name">First Name:</label><br>
-                <input type="text" id="first-name" name="first-name" required><br>
-                <label for="last-name">Last Name:</label><br>
-                <input type="text" id="last-name" name="last-name" required><br>
+            <form class="contact-form" action="/submit_contact_form" method="POST"><!-- method post is used instead of get, also note the action section doesnt work because of the js code -->
+                <!-- <label for="first-name">First Name:</label><br> -->
+                <input type="text" placeholder="First Name" id="first-name" name="first-name" required><br>
+                <input type="text" placeholder="Last Name" id="last-name" name="last-name" required><br>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-
+                <input type="email" placeholder="Email" id="email" name="email" required><br>
+                
+                <label for="subject">Subject:</label><br>
                 <select id="subject" name="subject" required>
-                    <option value="general">Subject</option>
                     <option value="general">General Inquiry</option>
                     <option value="appointment">Appointment Request</option>
                     <option value="feedback">Feedback</option>
@@ -145,7 +144,7 @@
             <h3>Contact Info</h3>
             <div class="contact-info-container">
             <ul class="contact-info">
-                <li><a href=""><img src="images/phonelogo.jpeg" alt="Social Icon 6" height="50px" width="50px"></a>+25471187253</li>
+                <li><a href=""><img src="images/phonelogo.jpeg" alt="Social Icon 6" height="50px" width="50px"></a>+254711872537</li>
                 <li><a href=""><img src="images/emaillogo.jpeg" alt="Social Icon 5" height="50px" width="50px"></a>@soundmindterapy.com</li>
             </ul>
             </div>

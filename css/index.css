@@ -1,8 +1,59 @@
-/* *{
-  margin: 0;
+@keyframes dropIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.drop-in-animation {
+  animation: dropIn 1.5s ease forwards;
+}
+@keyframes slideLeft{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.slideLeft{
+  animation: slideLeft 1s ease-out
+}
+
+
+
+
+
+
+
+/* @keyframes bounce{
+  0%,
+  20%, 
+  50%, 
+  80%, 
+  100%{
+    transform: translateY(0);
+  }
+ 
+  40%{
+    transform: translateY(-30px);
+  }
+ 
+
+}
+
+.animate{
+  animation: bounce;
 } */
 
 
+
+/* navigation bar */
 .navp {
     background-color: white;
     display: flex;
@@ -30,12 +81,15 @@
 .navp ul li a {
   text-decoration: none;
   color: black;
+  transition: all 0.9s;
+
 }
 
   
 .navp ul li a:hover {
   color: #ff0000;
   font-size: 40px;
+  transition: all 0.05s;
 
 }
 
@@ -84,8 +138,10 @@
     border: 7px solid white;
     margin-right: 15%;
     box-shadow: 20px 20px 50px 15px grey;
-
 }
+
+
+
 
 /* Style the learn more button */
 .homep button {
@@ -94,14 +150,20 @@
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+
+    transition: all 0.9s;
+
 }
 
 .homep button:hover{
   color: #ff0000;
   border: 1px solid #ff0000;
+  transform: translateY(-5px);
 
   /* background-color: gray; */
   box-shadow: 2px 2px 5px #ff0000;
+  transition: all 0.05s;
+
 
 }
 
@@ -139,6 +201,13 @@ p {
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+
+    /*animations*/
+    transition: all 0.9s;
+
+
+
+
 }
 
 #btn2:hover{
@@ -146,6 +215,12 @@ p {
   background-color: white;
   border: 1px solid #ff0000;
   box-shadow: 2px 2px 5px #ff0000;
+
+  /* animations */
+  transform: translateY(-5px);
+  transition: all 0.05s;
+
+
 
 }
 
@@ -237,7 +312,10 @@ p {
     background-color: rgb(206, 235, 247);
     box-shadow: 20px 20px 50px 15px grey;
     padding: 8px;
+}
 
+.leftp img{
+  transition: all 0.9s;
 
 }
 .leftp img:hover{
@@ -245,6 +323,8 @@ p {
     border-radius:60%;
     border: none;
     box-shadow: 5px 5px 10px 2px #ff0000;
+    transition: all 0.05s;
+
 
 }
 
@@ -257,20 +337,6 @@ p {
 
 }
 
-
-.leftp button{
-    background: rgba(221, 213, 210, 0.87);
-    padding:10px 15px;
-    border-radius:5px;
-    font-weight: bold;
-    font-size: 0.9em;
-    border: 1px solid black;  
-}
-.leftp button:hover{
-    cursor: pointer;
-    background-color: white;
-    box-shadow: 5px 5px rgb(187, 182, 182);
-}
 
  .learnmorep{
       margin: 20px;
@@ -313,6 +379,8 @@ p {
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
+    transition: all 0.9s;
+
   }
   
   #submitbtnp:hover{
@@ -320,6 +388,9 @@ p {
     background-color: white;
     border: 1px solid #ff0000;
     box-shadow: 2px 2px 5px #ff0000;
+
+    transform: translateY(-5px);
+    transition: all 0.05s;
   
 
   }
@@ -339,7 +410,14 @@ p {
     height: 100px;
     border: 1px solid black;
     border-radius: 5px;
-    
+    box-shadow: 3px 3px 5px 3px rgb(206, 235, 247) ;
+
+}
+
+.contact-form textarea:hover{
+  border: 1px solid #ff0000;
+  box-shadow: 2px 2px 5px #ff0000;
+  
 }
 
   .contact-form input {
@@ -349,12 +427,52 @@ p {
     border-bottom: 1px solid black;
 }
 
+#subject option{
+  color: #555;
+}
+#subject{
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 3px rgb(206, 235, 247) ;
+  margin-top: 10px;
+  padding: 8px;
+  background-color: white;
+
+
+}
+
+#subject:hover{
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  box-shadow: #ff0000;
+  cursor: pointer;
+  transform: translateY(-5px);
+
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(-2px) rotate(-2deg); }
+  25% { transform: translateX(2px) rotate(2deg); }
+  50% { transform: translateX(-2px) rotate(-2deg); }
+  75% { transform: translateX(2px) rotate(2deg); }
+  100% { transform: translateX(0) rotate(0); }
+}
+
+.contact-form input,
+.contact-form textarea{
+  animation: vibrate 0.3s ease-in-out;
+  animation-iteration-count: 2;
+}
+
+
+
 .slideshow{
   display: flex;
 }
 .slideshow img{
   margin: 40px;
   box-shadow: 2px 2px 5px #ff0000;
+
   
 
 
@@ -377,11 +495,18 @@ p {
   margin: 20px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px 3px rgb(206, 235, 247) ;
+  transition: all 0.9s;
+
 
 }
 
 .social-media-icons img:hover{
   box-shadow: 2px 2px 5px #ff0000;
+
+
+  transform: translateY(-5px);
+  transition: all 0.05s;
+
 
 }
 
@@ -399,8 +524,12 @@ p {
 
 .contact-info img:hover{
   box-shadow: 2px 2px 5px #ff0000;
+  transform: translateY(-5px);
+
 
 }
+
+
 
 
 
@@ -434,6 +563,8 @@ p {
   position: fixed;
   bottom: 20px;
   right: 5%;
+  box-shadow: 2px 2px 5px rgb(206, 235, 247);
+  /* mix-blend-mode: difference; to make the button change color as you scroll for visibility */
 
 }
  .scroll-to-top:hover{
@@ -443,6 +574,7 @@ p {
   box-shadow: 2px 2px 5px #ff0000;
 
  }
+
 
 
 
