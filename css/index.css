@@ -1,3 +1,7 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @keyframes dropIn {
   0% {
       opacity: 0;
@@ -22,34 +26,47 @@
 }
 
 .slideLeft{
-  animation: slideLeft 1s ease-out
+  animation: slideLeft 1s ease-out;
 }
 
-
-
-
-
-
-
-/* @keyframes bounce{
-  0%,
-  20%, 
-  50%, 
-  80%, 
-  100%{
+@keyframes slideRight{
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+}
+100% {
+    opacity: 1;
     transform: translateY(0);
-  }
- 
-  40%{
-    transform: translateY(-30px);
-  }
- 
+}
 
 }
 
-.animate{
-  animation: bounce;
-} */
+.slideRight{
+  animation: slideRight 1s ease-out
+
+  
+}
+
+@keyframes text1{
+  0%, 80%{
+    color: #ff0000;
+  }
+
+  20%{
+    color: #555;
+    font-size: 0.85em;
+  }
+
+  40% , 100%{
+    color: black;
+  }
+
+  60%{
+    color: #555;
+  }
+}
+
+
 
 
 
@@ -63,34 +80,29 @@
     top: 0;
     z-index: 100;
     box-shadow: 20px 20px 50px 10px rgb(52, 196, 206) inset;
-
 }
+
 .navp ul{
   display: flex;
-
 }
+
 .navp li{
   list-style: none;
   margin-left: 40px;
   font-size: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* color: black; */  
 }
-
 
 .navp ul li a {
   text-decoration: none;
   color: black;
   transition: all 0.9s;
-
 }
 
   
 .navp ul li a:hover {
   color: #ff0000;
-  font-size: 40px;
+  font-size: 33px;
   transition: all 0.05s;
-
 }
 
 
@@ -115,13 +127,6 @@
 } */
 
 
-
-/* Set the background color of the home paragraph */
-.homep {
-    background-color: rgb(206, 235, 247);
-    height: 400px;
-}
-
 /* Align the text and button on the left and the image on the right */
 .homep {
     display: flex;
@@ -130,6 +135,8 @@
     padding: 20px;
     margin-bottom: 35px;
     height: 600px;
+    background-color: rgb(206, 235, 247);
+
 }
 
 /* Style the image as a circle with a white border */
@@ -137,6 +144,7 @@
     border-radius:60%;
     border: 7px solid white;
     margin-right: 15%;
+    margin-bottom: 40px;
     box-shadow: 20px 20px 50px 15px grey;
 }
 
@@ -167,15 +175,23 @@
 
 }
 
-/* Add some padding to the home paragraph */
 .homep p {
     padding-right: 20px;
+    font-size: 1.2em;
 }
 
-/* Additional styles */
-/* Add your additional styles here */
+#slideright{
+  font-weight: 200;
+  text-align: center;
+}
+#text1{
+  animation: text1 4s;
+  font-weight: 100;
+  font-size: 5.5em;
+}
 
-/* Styles for ABOUT US section */
+
+/* About Us section */
  .homep h1 {
     font-size: 2.0em;
     font-weight: bold;
