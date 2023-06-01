@@ -23,11 +23,11 @@ scrollToTopButton.addEventListener('click', function() {
     });
 });
 
-// Redirect to aboutus.html on button click
-const button = document.getElementById('btn2');
-button.addEventListener('click', function() {
-    window.location.href = 'aboutus.html';
-});
+// // Redirect to aboutus.html on button click
+// const button = document.getElementById('btn2');
+// button.addEventListener('click', function() {
+//     window.location.href = 'aboutus.html';
+// });
 
 // Form submission alert and reset
 const form = document.querySelector('.contact-form');
