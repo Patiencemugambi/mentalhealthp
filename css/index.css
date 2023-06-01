@@ -213,6 +213,18 @@
 
 }
 
+
+#btn2 a{
+  text-decoration: none;
+  color: black;
+
+}
+
+#btn2 a:hover{
+  color: #ff0000;
+  transform: 1.0s;
+}
+
 .aboutp{
   margin-top: 15px;
 }
@@ -680,4 +692,11 @@ footer {
   
   
 
+
+/* styling for aboutus.html */
+#approachp ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 

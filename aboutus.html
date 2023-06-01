@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sound Mind Therapy</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navp">
+        <div class="logo1">
+        <img  class="slideLeft" src="images/logoimage.jpeg" alt="soundmindterapylogo" height="100px" height="100px">
+        <h1  class="slideLeft"> Sound <br> Mind Therapy</h1>
+        </div>
+        <ul>
+            <li> <a href="index.html#home-p"> Home </a></li>
+            <li> <a href="index.html#aboutusp"> About </a></li>
+            <li> <a href="index.html#ourservicesp">Services</a></li>
+            <li> <a href="#contactsectionp">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+    
+    <!-- About Us -->
+    <div class="aboutp" id="aboutusp">
+        <div class="aboutp1">
+            <div class="cont1">
+                <h1 id="abtp">ABOUT US</h1>
+                <h2>Understanding our Therapy Sessions</h2>
+            </div>
+            <div class="abtp1">
+                <div>
+                <p>At Sound Mind Therapy, we believe in the transformative power of therapy and its ability to bring healing and positive change to people's lives. We are a dedicated team of experienced therapists who are passionate about helping individuals, couples, and groups overcome mental health challenges and achieve emotional well-being.</p>
+                <p>Our Approach:</p>
+                </div>
+                <div id="approachp">
+                <ul>
+                    <li><strong>Client-Centered:</strong> We prioritize your needs and tailor our therapy sessions to address your unique concerns and goals. We create a safe, non-judgmental, and confidential environment where you can openly express yourself and explore your thoughts and emotions.</li>
+                    <li><strong>Evidence-Based:</strong> We follow evidence-based practices and stay up to date with the latest research in the field of mental health. Our therapists are licensed professionals with extensive training and expertise in various therapeutic modalities.</li>
+                    <li><strong>Holistic Perspective:</strong> We believe in addressing mental health within the context of your whole being. We consider the interplay between your thoughts, emotions, behaviors, and relationships to develop comprehensive treatment plans that promote overall well-being.</li>
+                    <li><strong>Collaborative Approach:</strong> Therapy is a collaborative process, and we work together with you to explore your concerns, set achievable goals, and develop strategies for personal growth and positive change. We value your input and actively involve you in the therapeutic journey.</li>
+                </ul>
+                </div>
+                <button id="btn2" type="menu">DOWNLOAD BROCHURE</button>
+            </div>
+        </div>
+        <hr>
+        <div class="img2">
+            <img src="images/mental-health-care-sketch-diagram_53876-121351.avif" alt="" height="auto" width="1000px">
+        </div>
+    </div>
+    
+    <!-- Our Team -->
+    <div class="our-teamp">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <div class="member">
+                <img src="images/therapist3.jpg" alt="Therapist 3" height="300px" width="300px">
+                <h3>Chepkoech Faith</h3>
+                <p>Chepkoech Faith is a compassionate therapist with expertise in trauma-informed care. She is dedicated to supporting individuals on their healing journey and helping them build resilience.</p>
+            </div>
+            <div class="member">
+                <img src="images/therapist4.jpg" alt="Therapist 4" height="300px" width="300px">
+                <h3>Enock Kipkirui</h3>
+                <p>Enock Kipkirui is a licensed therapist specializing in mindfulness-based therapy. He believes in the power of present-moment awareness and helps clients develop strategies to manage stress and cultivate inner peace.</p>
+            </div>
+            <div class="member">
+                <img src="images/therapist5.jpg" alt="Therapist 5" height="300px" width="300px">
+                <h3>Ibrahim Mohamed</h3>
+                <p>Ibrahim Mohamed is a skilled therapist with experience in cognitive-behavioral therapy. He works collaboratively with clients to identify and change negative thought patterns and behaviors, promoting personal growth and well-being.</p>
+            </div>
+            <div class="member">
+                <img src="images/therapist6.jpg" alt="Therapist 6" height="300px" width="300px">
+                <h3>Patience Mugambi</h3>
+                <p>Patience Mugambi is a compassionate therapist specializing in family therapy. She helps families improve communication, resolve conflicts, and strengthen their relationships to create a nurturing and supportive environment.</p>
+            </div>
+        </div>
+    </div>
+    <section class="contact-section" id="contactsectionp">
+        <h2>Contact Us</h2>
+        <hr>
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <h3>Send a Message</h3>
+                <form class="contact-form" action="/submit_contact_form" method="POST"><!-- method post is used instead of get, also note the action section doesnt work because of the js code -->
+                    <!-- <label for="first-name">First Name:</label><br> -->
+                    <input type="text" placeholder="First Name" id="first-name" name="first-name" required><br>
+                    <input type="text" placeholder="Last Name" id="last-name" name="last-name" required><br>
+    
+                    <input type="email" placeholder="Email" id="email" name="email" required><br>
+                    
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject" required>
+                        <option value="general">General Inquiry</option>
+                        <option value="appointment">Appointment Request</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select><br>
+    
+                    <label for="message">Message:</label><br>
+                    <textarea id="messagep" name="message" required></textarea><br>
+    
+                    <button type="submit" id="submitbtnp">Submit</button><br>
+                </form>
+            </div>
+            <div class="contact-info-container">
+                <h3>Contact Info</h3>
+                <div class="contact-info-container">
+                <ul class="contact-info">
+                    <li><a href=""><img src="images/phonelogo.jpeg" alt="Social Icon 6" height="50px" width="50px"></a>+254711872537</li>
+                    <li><a href=""><img src="images/emaillogo.jpeg" alt="Social Icon 5" height="50px" width="50px"></a>@soundmindterapy.com</li>
+                </ul>
+                </div>
+                <div class="social-media-container"> 
+                <ul class="social-media-icons">
+                    <li><a href=""><img src="images/facebooklogo.jpeg" alt="Social Icon 1" height="50px" width="50px"></a></li>
+                    <li><a href=""><img src="images/twitterlogo.jpeg" alt="Social Icon 2" height="50px" width="50px"></a></li>
+                    <li><a href=""><img src="images/instagramlogo.jpeg" alt="Social Icon 3" height="50px" width="50px"></a></li>
+                    <li><a href=""><img src="images/whatsapplogo.jpeg" alt="Social Icon 4" height="50px" width="50px"></a></li>
+    
+                </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,17 +1,3 @@
-// Get the form element using class name
-const form = document.querySelector('.contact-form');
-
-// Add an event listener to the form's submit event
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Display a success message
-    alert('Form Submitted successfully!');
-
-    // reset the form after displaying the alert
-    form.reset();
-});
-
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -28,14 +14,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
-//scroll to top
-
-  const scrollToTopButton = document.querySelector('.scroll-to-top');
-
-   scrollToTopButton.addEventListener('click', function() {
+// Scroll to top
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+scrollToTopButton.addEventListener('click', function() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
+});
+
+// Redirect to aboutus.html on button click
+const button = document.getElementById('btn2');
+button.addEventListener('click', function() {
+    window.location.href = 'aboutus.html';
+});
+
+// Form submission alert and reset
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Form submitted successfully!');
+    form.reset();
 });
